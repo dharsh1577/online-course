@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding-top: 100px; /* Adjust according to your navbar height */
+    background: url('loginn.jpg') no-repeat center center fixed; /* Set background image */
+    background-size: cover;
+}
+
+/* Navbar Styling */
+.navbar {
+background-color: white;
+padding: 1rem 2rem;
+justify-content: space-between;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right:10px;
+}
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.nav-link.active {
+    color: #007bff !important;
+    font-weight: bold;
+
+}
+.centered-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.0); /* White with 80% transparency */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 40px;
+    margin-right: 90px;
+    position: absolute;
+    top: 60px;
+    left: 1px; /* Adjust left positioning */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    right: 20px;
+    top: 70%;
+    width: 30px;
+    transform: translateY(-50%);
+    color: #007bff;
+    pointer-events: none;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #007bff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #007bff;
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
+}
+
+.toggle-link {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+.d-none {
+    display: none;
+}

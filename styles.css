@@ -1,0 +1,434 @@
+
+    body {
+        padding-top: 100px; /* Adjust according to your navbar height */
+    }
+    
+
+ 
+ /* Navbar Styling */
+ .navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    margin-right:10px;
+}
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.nav-link.active {
+    color: #007bff!important;
+    font-weight: bold;
+}
+/* Style for User Dropdown Menu */
+.nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+/* User Icon styling */
+.nav-item .nav-link span {
+    margin-right: 8px; /* Space between the emoji and the username */
+    font-size: 24px;
+    color: blue;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    min-width: 200px;
+}
+
+/* Style the individual dropdown items */
+.dropdown-menu .dropdown-item {
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style for the text inside the dropdown */
+.dropdown-menu .dropdown-item-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Adjust dropdown divider */
+.dropdown-divider {
+    border-color: #ddd;
+}
+
+/* Style for the Logout button */
+.dropdown-menu .text-danger {
+    font-weight: bold;
+    color: #dc3545 !important;
+}
+
+/* Right align the dropdown menu */
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
+
+/* Show login button when the user is not logged in */
+.nav-item .nav-link {
+    font-size: 16px;
+}
+
+
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem 1rem;
+    background-color: white;
+}
+.hero-content {
+    text-align: left;
+    flex: 1;
+    margin-left: 4rem;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+.hero-content .typewriter {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #007bff;
+    display: inline-block;
+}
+.hero-content .stats {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+.hero-content .stats div {
+    margin: 0 1.5rem 0 0;
+    text-align: center;
+    pAdding :20px;
+}
+.hero-content .stats div h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+.hero-content .stats div p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+.hero-image img {
+    width: 600px;
+    height: 350px;
+    border: 5px solid white;
+  
+    border-radius: 10px;
+}
+/* Slider Section */
+/* Slider Section */
+.slider-section {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: white;
+}
+
+.slider-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    height: 300px; /* Adjusted for cards */
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.slider .list {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.slider .list .item {
+    flex: 0 0 auto;
+    width: 250px; /* Fixed card width */
+    height: 100%;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.slider .list .item img {
+    width: 100%;
+    height: 150px; /* Fixed image height */
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.slider .list .item .card-body {
+    padding: 10px;
+}
+
+.slider .list .item .card-text {
+    font-size: 1rem;
+    color: #343a40;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Infinite Scrolling Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-270px * 4)); /* Adjusted for card size + margin */
+    }
+}
+
+/* Pause Animation on Hover */
+.slider:hover .list {
+    animation-play-state: paused;
+}
+/* Enroll Button Styling */
+.enroll-container {
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
+}
+
+.btn-enroll {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    border-color:  #007bff;
+    text-decoration: none;
+    filter: drop-shadow(0 0 10px blue);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Enroll Button */
+.btn-enroll:hover {
+    filter: drop-shadow(0 0 15px #007bff);
+    background-color: #0056b3;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Tools Section */
+.tools-section {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.tools-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.tools-heading span {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.tools-subheading {
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+/* Tools Cards */
+.tools-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tools-slide {
+    display: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tools-slide.active {
+    display: flex;
+}
+
+.tool-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    width: 150px;
+}
+.tool-card1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    width: 150px;
+}
+.tool-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+.tool-card1 img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+.tool-card1 p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #343a40;
+}
+.tool-card p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #343a40;
+}
+
+/* Dots for Navigation */
+.tools-dots {
+    margin-top: 2rem;
+}
+
+.tools-dots .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tools-dots .dot.active {
+    background-color: #007bff;
+}
+/* Community Section */
+.community-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white; /* Optional background color */
+}
+
+.community-section h3 {
+    color: #007bff; /* Highlight color for 'Community' */
+    margin-bottom: 10px;
+}
+
+.community-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.community-section p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.community-avatars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.community-avatars img {
+    border-radius: 50%; 
+    width: 90px; 
+    height: 100px; 
+    object-fit: cover; 
+}
+
+
+.community-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat h3 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: #000;
+}
+
+.stat p {
+    margin: 0;
+    color: #666;
+}

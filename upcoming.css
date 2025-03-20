@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px; 
+    background-color: white;
+}
+/* Navbar Styling */
+.navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
+    }
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+        margin-left: 50px;
+        margin-right:10px;
+    }
+    .nav-link {
+        color: black !important;
+        font-weight: 700;
+        margin-right: 30px;
+    }
+    .nav-link.active {
+        color: #007bff !important;
+        font-weight: bold;
+    
+    }
+    .heading {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: monospace;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, rgba(2, 2, 2, 0.3) 25%, rgba(0,0,0,1) 50%, rgba(7, 6, 6, 0.3) 100%);
+        -webkit-background-clip: text;
+        color: transparent; /* Makes the text transparent to show the gradient */
+        animation: shine 2s linear infinite;
+        background-size: 200%;
+    }
+    
+    @keyframes shine {
+        0% {
+            background-position: 200% 0;
+        }
+        100% {
+            background-position: -200% 0;
+        }
+    }
+    
+    .card {
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .image-container {
+        position: relative;
+        height: 400px; /* Fixed height for images */
+        overflow: hidden;
+    }
+
+    .card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-title {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: #343a40;
+    }
+
+    /* Skeleton loader for description */
+    .details {
+        height: 15px;
+        width: 80%;
+        background: linear-gradient(90deg, #ececec 25%, #f3f3f3 50%, #ececec 75%);
+        background-size: 200% 100%;
+        border-radius: 5px;
+        animation: shimmer 1.5s infinite linear;
+        margin: 10px auto 0;
+    }
+
+    .btn-placeholder {
+        margin: 10px auto 0;
+        width: 60%;
+        height: 35px;
+        background: linear-gradient(90deg, #ececec 25%, #f3f3f3 50%, #ececec 75%);
+        background-size: 200% 100%;
+        border-radius: 5px;
+        animation: shimmer 1.5s infinite linear;
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: -450px 0;
+        }
+        100% {
+            background-position: 450px 0;
+        }
+    }
